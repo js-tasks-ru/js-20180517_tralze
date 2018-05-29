@@ -8,7 +8,7 @@
  */
 function pow( x, n ) {
 	if( n < 1 )
-		return new Error( "Incorrect parametr 'n'" );
+		return false;
 	
 	let res = x;
 	

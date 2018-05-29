@@ -7,7 +7,7 @@
  */
 function getMinMax(str) {
 	let numbers = str.match( /[0-9.-]+/g ),	
-		big = 0, small = 0;
+		big, small = Infinity;
 
 	numbers.forEach(( val ) => {
 		val = parseFloat( val );
@@ -15,9 +15,10 @@ function getMinMax(str) {
 		if( Number.isNaN( val ) )
 			return;
 			
-		if( val > big )
+		if( big == undefined || val > big )
 			big = val;
-		else if( val < small )
+		
+		if( val < small )
 			small = val;
 	});
 	
