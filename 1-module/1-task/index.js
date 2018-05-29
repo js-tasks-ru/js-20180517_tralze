@@ -23,4 +23,4 @@ let x = prompt( 'x = ', '' ),
 	n = prompt( 'n = ', '' ),
 	res = pow( x, n );
 	
-alert( res );
+alert( res ); 
