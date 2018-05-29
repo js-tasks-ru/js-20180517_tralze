@@ -7,7 +7,7 @@
  * @returns {number}
  */
 function pow( x, n ) {
-	if( typeof n !== 'number' || !Number.isInteger( n ) || n < 1 )
+	if( !Number.isInteger( n ) || n < 1 )
 		return new Error( "Invalid parametr 'n'" );
 	
 	let res = x;
