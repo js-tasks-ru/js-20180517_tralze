@@ -19,8 +19,8 @@ function pow( x, n ) {
 	return res;
 }
 
-let x = prompt( 'x = ', '' ),
-	n = prompt( 'n = ', '' ),
+let x = +prompt( 'x = ', '' ),
+	n = +prompt( 'n = ', '' ),
 	res = pow( x, n );
 	
 alert( res );
