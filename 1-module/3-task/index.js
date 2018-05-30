@@ -25,3 +25,4 @@ function getMinMax(str) {
 	return { min: small, max: big };
 }
 
+ 
